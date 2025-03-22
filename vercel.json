@@ -1,7 +1,25 @@
 {
-    "build": {
-      "commands": {
-        "build": "vite build"
-      }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/old-path",
+      "destination": "/new-path",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.js"
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "memory": 3008,
+      "maxDuration": 10
     }
   }
+}
