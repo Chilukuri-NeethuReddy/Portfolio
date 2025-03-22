@@ -1,0 +1,78 @@
+:root {
+  --footer-bg-dark: #ffffff; /* White background for dark mode */
+  --footer-bg-light: #f9f9f9; /* Light background for light mode */
+  --footer-text-dark: #000000; /* Black text for dark mode */
+  --footer-text-light: #0d0d0d; /* Dark text for light mode */
+  --icon-hover-color: #3a72ff; /* Blue color for icon hover */
+  --icon-dark-color: #000000; /* Black color for icons in dark mode */
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0; /* Reduced padding for a smaller footer */
+  text-align: center;
+  background: var(--footer-bg-light); /* Light mode background */
+  color: var(--footer-text-light); /* Light mode text color */
+  transition: all 0.3s ease-in-out; /* Smooth transition for theme changes */
+}
+
+/* Increase specificity for dark mode */
+[data-theme='dark'] .footer {
+  background: var(--footer-bg-dark) !important; /* White background for dark mode */
+  color: var(--footer-text-dark) !important; /* Black text for dark mode */
+}
+
+/* Explicitly target the <p> tag in dark mode with higher specificity */
+[data-theme='dark'] .footer p {
+  color: var(--footer-text-dark) !important; /* Black text for dark mode */
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 14px; /* Reduced font size for a smaller footer */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Reduced spacing between icons */
+  margin-top: 10px; /* Reduced margin for better spacing */
+}
+
+.icon {
+  font-size: 20px; /* Reduced icon size */
+  color: inherit; /* Inherits the footer text color */
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  color: var(--icon-hover-color) !important; /* Blue color on hover */
+  transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+/* Dark Mode Specific Styles with higher specificity */
+[data-theme='dark'] .footer .icon {
+  color: var(--icon-dark-color) !important; /* Black icons in dark mode */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0; /* Further reduced padding for smaller screens */
+  }
+
+  .socialLinks {
+    gap: 15px; /* Further reduced spacing for smaller screens */
+  }
+
+  .icon {
+    font-size: 18px; /* Further reduced icon size for mobile */
+  }
+}
