@@ -9,8 +9,8 @@ const projects = [
     src: pet,
     title: "PetFood Store Application",
     description: "Developed a responsive pet care platform with HTML, CSS, and JavaScript, featuring immersive visuals and intuitive navigation for a seamless shopping experience. Implemented user authentication to enable secure access, allowing registered users to browse and purchase pet care products. Integrated an Oracle database using JDBC to manage user data securely.",
-    /*demoLink: "https://viberr-dem",*/
-    codeLink: "",
+    demoLink: "https://chilukuri-neethureddy.github.io/PetFoodShop/",
+    codeLink: "https://github.com/Chilukuri-NeethuReddy/PetFoodShop",
     technologies: ["HTML", "CSS", "JavaScript", "Oracle DB", "JDBC"]
   },
   {
