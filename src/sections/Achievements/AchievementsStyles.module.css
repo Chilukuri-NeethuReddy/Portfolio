@@ -1,0 +1,41 @@
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .achieveList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .achieveItem {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  @media (min-width: 768px) {
+    .achieveItem {
+      padding: 30px;
+    }
+  }
+  
