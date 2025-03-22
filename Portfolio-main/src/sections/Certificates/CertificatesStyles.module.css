@@ -1,0 +1,78 @@
+
+.container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.certCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--color-light-card);
+  box-shadow: 0 10px 15px var(--color-light-shadow);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.certCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 18px var(--color-primary-hover);
+}
+
+.certImage {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.certTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.certIssuer {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.certLink {
+  text-decoration: none;
+  color: white; /* White text for better contrast */
+  font-weight: 600;
+  background: #0987f2; /* Blue background in both light and dark modes */
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.certLink:hover {
+  background: #0769c5; /* Darker blue on hover in both light and dark modes */
+}
+
+/* Ensure button is blue in dark mode */
+body.dark-mode .certLink {
+  background: #0987f2 !important; /* Force blue background in dark mode */
+  color: white !important; /* Force white text in dark mode */
+}
+
+body.dark-mode .certLink:hover {
+  background: #0769c5 !important; /* Force darker blue on hover in dark mode */
+}
+
+@media (max-width: 768px) {
+  .certificates {
+    grid-template-columns: 1fr;
+  }
+}

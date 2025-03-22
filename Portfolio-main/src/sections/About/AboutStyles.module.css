@@ -1,0 +1,39 @@
+.container {
+    padding: 80px 20px;
+    text-align: center;
+    background: var(--background-color);
+    color: var(--text-color);
+  }
+  .container p {
+    font-size: 1.6.5rem !important; /* Force font size */
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--btn-color);
+  }
+  
+  p {
+
+    line-height: 1.6;
+    font-size: 1.2rem !important;
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 60px 20px;
+    }
+  
+    p {
+      font-size: 1.6rem;
+    }
+  }
