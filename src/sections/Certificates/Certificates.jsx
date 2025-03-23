@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { FaCertificate } from 'react-icons/fa';
 import styles from "./CertificatesStyles.module.css";
 import aws from "../../assets/aws.png";
-import nptel from "../../assets/nptel.png";
+import salesforce from "../../assets/salesforce.png";
 import cisco from "../../assets/cisco.png";
 import infosys from "../../assets/infosys.png";
 import capgemini from "../../assets/Capgemini.webp";
-import smart from "../../assets/smart.jpeg";
+
 
 
 const certifications = [
@@ -18,7 +18,7 @@ const certifications = [
   },
   {
     title: "Salesforce AI Associate",
-    imageSrc: nptel,
+    imageSrc: salesforce,
     issuer: "Salesforce",
     link: "https://drive.google.com/file/d/1CE1Eg6gQ9vP8eQ0NjkOqrUHPE4cCA0JQ/view?usp=sharing"
   },

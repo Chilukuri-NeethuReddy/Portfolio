@@ -18,7 +18,7 @@ const projects = [
     title: "Employee management system",
     description: "Developed an Employee Management System using MongoDB, Express.js, React.js, and Node.js, providing a modern and scalable architecture for seamless employee management. Implemented role-based access control for admins and employees, enabling secure login and profile management. Employees can view their personal details, salaries, experience, and skills, while admins have functionalities to register, update, and delete employee records.",
     demoLink: "https://employee-management-system-ay63.onrender.com",
-    codeLink: "https://employee-management-system-ay63.onrender.com",
+    codeLink: "https://github.com/Chilukuri-NeethuReddy/Employee-Management-System",
     technologies: ["React.js", "Node.js", "Express", "MongoDB"]
   },
   {
